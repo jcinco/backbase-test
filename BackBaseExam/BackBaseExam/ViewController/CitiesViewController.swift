@@ -41,6 +41,12 @@ public class CititesViewController:UIViewController, UITableViewDataSource, UITa
         }
     }
     
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.citySearchBar.text = self.viewModel?.searchEntry
+    }
+    
+    
     func activityIndicatorView(show:Bool) {
         if (show) {
             self.activityIndicatorView.startAnimating()
