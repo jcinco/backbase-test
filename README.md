@@ -19,7 +19,7 @@ The approach I used to load and persist the JSON data during the lifetime of the
 
 ### 2. Searching 
 - Searching is done asynchronously to avoid UI performance lag when typing on the search bar.
-- Since searching is done asynchronously, I utilized NotificationCenter to post notifications to an observing view controller each time there is an update.
+- Since searching is done asynchronously, I utilized NotificationCenter to post notifications to an observing view controller each time there is an update. This ensures lose coupling.
 - In searching for a match, I used ```array.filter()``` API.
 
 ### 3. Keeping data consistent
