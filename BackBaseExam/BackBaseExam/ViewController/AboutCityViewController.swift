@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class AboutViewController:UIViewController {
+public class AboutCityViewController:UIViewController {
     public var city:City? = nil
     @IBOutlet weak var countryCodeLabel: UILabel!
     @IBOutlet weak var cityNameLabel: UILabel!

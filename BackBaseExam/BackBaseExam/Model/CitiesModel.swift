@@ -38,7 +38,7 @@ public class CitiesModel:NSObject {
         if ((nil != name || name?.count ?? 0 > 0)
             && self.isWhitespaceString(string: name ?? "  ") == false) {
             return self.cities?.filter { (item) -> Bool in
-                return (item.name?.lowercased().hasPrefix(self._filterString!))!
+                return (item.name.lowercased().hasPrefix(self._filterString!))
             }
         }
         else {
@@ -91,7 +91,7 @@ public class CitiesModel:NSObject {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let result = try decoder.decode([City].self, from: inJson)
                 self.cities = result.sorted(by: { (c1, c2) -> Bool in
-                    return c1.name! < c2.name!
+                    return c1.name < c2.name
                 })
                 
                 completion(true)

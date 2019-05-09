@@ -65,6 +65,7 @@ public class CitiesViewModel:NSObject {
     
     
     
+    
     // MARK: - Singleton implementation
     private static var INSTANCE:CitiesViewModel!
     public static var sharedInstance:CitiesViewModel! {
@@ -83,3 +84,5 @@ public class CitiesViewModel:NSObject {
         INSTANCE = nil
     }
 }
+
+

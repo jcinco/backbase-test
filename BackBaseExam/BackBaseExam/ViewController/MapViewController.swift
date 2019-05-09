@@ -41,8 +41,8 @@ public class MapViewController:UIViewController {
         }
         
         let annotation:MKPointAnnotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly: city.coord?.lat ?? 0) ?? 0,
-                                                       longitude: CLLocationDegrees(exactly: city.coord?.lon ?? 0) ?? 0)
+        annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly: city.coord.lat) ?? 0,
+                                                       longitude: CLLocationDegrees(exactly: city.coord.lon) ?? 0)
         self.mapView.addAnnotation(annotation)
         self.mapView.setCenter(annotation.coordinate, animated: true)
         

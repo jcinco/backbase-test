@@ -15,6 +15,7 @@ public class CititesViewController:UIViewController, UITableViewDataSource, UITa
     @IBOutlet weak var citiesTable: UITableView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
+    
     private let viewModel = CitiesViewModel.sharedInstance
     
     override public func viewDidLoad() {
@@ -81,15 +82,19 @@ public class CititesViewController:UIViewController, UITableViewDataSource, UITa
             let city:City = (viewModel?.cities[indexPath.row])!
             
             // Set the necessary info in the cell
-            cityCell.cityNameLabel.text = "\(city.name!) - \(city.country!)"
-            cityCell.coordLabel.text = "Lat: \(city.coord!.lat!), Lon: \(city.coord!.lon!)"
+            cityCell.cityNameLabel.text = "\(city.name) - \(city.country)"
+            cityCell.coordLabel.text = "Lat: \(city.coord.lat), Lon: \(city.coord.lon)"
             
             // Add the index for this cell for reference when about button is clicked.
             cityCell.index = indexPath.row
             cityCell.action = {(index:Int)->Void in
                 // Display the about screen
                 let aboutVC = ViewControllerFactory.sharedInstance?.viewController(withStoryboardName: "about") as! AboutViewController
-                aboutVC.city = self.viewModel?.cities[index]
+                let aboutModel:AboutModelImpl = AboutModelImpl()
+                
+                aboutModel.city = self.viewModel?.cities[index]
+                aboutModel.loadAboutInfo(with: Presenter(view: aboutVC, model: aboutModel))
+                 
                 self.navigationController?.pushViewController(aboutVC, animated: true)
             }
         }
