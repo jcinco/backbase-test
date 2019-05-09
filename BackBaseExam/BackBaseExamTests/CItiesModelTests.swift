@@ -61,6 +61,9 @@ class CItiesModelTests: XCTestCase {
         // Empty string should return all cities
         result = self.model.cities(withName: "")
         XCTAssertTrue(result?.count ?? 0 > 0)
+        
+        result = self.model.cities(withName: "        ")
+        XCTAssertTrue(result?.count ?? 0 > 0)
     }
 
     func testPerformanceExample() {

@@ -30,10 +30,13 @@ public class CitiesModel:NSObject {
         }
     }
     
+    /**
+     */
     public func cities(withName name:String?)->[City]? {
         // set lower case for case insensitivity
         self._filterString = name?.lowercased()
-        if (nil != name || name?.count ?? 0 > 0) {
+        if ((nil != name || name?.count ?? 0 > 0)
+            && self.isWhitespaceString(string: name ?? "  ") == false) {
             return self.cities?.filter { (item) -> Bool in
                 return (item.name?.lowercased().hasPrefix(self._filterString!))!
             }
@@ -41,6 +44,14 @@ public class CitiesModel:NSObject {
         else {
             return self.cities
         }
+    }
+    
+    
+    private func isWhitespaceString(string:String)->Bool {
+        let inverted:CharacterSet = CharacterSet.whitespaces.inverted
+        let inString:NSString = NSString(string: string)
+        let empty:Bool = inString.rangeOfCharacter(from: inverted).location == NSNotFound
+        return empty
     }
     
     
