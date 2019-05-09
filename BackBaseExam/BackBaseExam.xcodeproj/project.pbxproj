@@ -9,7 +9,21 @@
 /* Begin PBXBuildFile section */
 		52735ED82283D09200BA6E03 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735ED72283D09200BA6E03 /* MapViewController.swift */; };
 		52735EDA2283D65400BA6E03 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735ED92283D65400BA6E03 /* MapViewModel.swift */; };
-		52735EDC2283EF8200BA6E03 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EDB2283EF8200BA6E03 /* AboutViewController.swift */; };
+		52735EDC2283EF8200BA6E03 /* AboutCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EDB2283EF8200BA6E03 /* AboutCityViewController.swift */; };
+		52735EE32284562C00BA6E03 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EDF2284562C00BA6E03 /* AboutModel.swift */; };
+		52735EE42284562C00BA6E03 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EDF2284562C00BA6E03 /* AboutModel.swift */; };
+		52735EE52284562C00BA6E03 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE02284562C00BA6E03 /* AboutView.swift */; };
+		52735EE62284562C00BA6E03 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE02284562C00BA6E03 /* AboutView.swift */; };
+		52735EE72284562C00BA6E03 /* AboutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE12284562C00BA6E03 /* AboutInfo.swift */; };
+		52735EE82284562C00BA6E03 /* AboutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE12284562C00BA6E03 /* AboutInfo.swift */; };
+		52735EE92284562C00BA6E03 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE22284562C00BA6E03 /* AboutPresenter.swift */; };
+		52735EEA2284562C00BA6E03 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EE22284562C00BA6E03 /* AboutPresenter.swift */; };
+		52735EEC2284564300BA6E03 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EEB2284564300BA6E03 /* AboutViewController.swift */; };
+		52735EED2284564300BA6E03 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EEB2284564300BA6E03 /* AboutViewController.swift */; };
+		52735EF02284581900BA6E03 /* aboutInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 52735EEF228457DE00BA6E03 /* aboutInfo.json */; };
+		52735EF6228468A400BA6E03 /* AboutViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EF42284687F00BA6E03 /* AboutViewTest.swift */; };
+		52735F1322846A9600BA6E03 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295946E227BA8AF00B48E59 /* City.swift */; };
+		52735F1422846A9700BA6E03 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295946E227BA8AF00B48E59 /* City.swift */; };
 		5295943E227BA81300B48E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295943D227BA81300B48E59 /* AppDelegate.swift */; };
 		52959440227BA81300B48E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295943F227BA81300B48E59 /* ViewController.swift */; };
 		52959443227BA81300B48E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52959441227BA81300B48E59 /* Main.storyboard */; };
@@ -50,7 +64,14 @@
 /* Begin PBXFileReference section */
 		52735ED72283D09200BA6E03 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		52735ED92283D65400BA6E03 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		52735EDB2283EF8200BA6E03 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		52735EDB2283EF8200BA6E03 /* AboutCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCityViewController.swift; sourceTree = "<group>"; };
+		52735EDF2284562C00BA6E03 /* AboutModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		52735EE02284562C00BA6E03 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		52735EE12284562C00BA6E03 /* AboutInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutInfo.swift; sourceTree = "<group>"; };
+		52735EE22284562C00BA6E03 /* AboutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		52735EEB2284564300BA6E03 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		52735EEF228457DE00BA6E03 /* aboutInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = aboutInfo.json; sourceTree = "<group>"; };
+		52735EF42284687F00BA6E03 /* AboutViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewTest.swift; sourceTree = "<group>"; };
 		5295943A227BA81300B48E59 /* BackBaseExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackBaseExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295943D227BA81300B48E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5295943F227BA81300B48E59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +123,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52735EDE2284561300BA6E03 /* AboutCode */ = {
+			isa = PBXGroup;
+			children = (
+				52735EEF228457DE00BA6E03 /* aboutInfo.json */,
+				52735EE12284562C00BA6E03 /* AboutInfo.swift */,
+				52735EDF2284562C00BA6E03 /* AboutModel.swift */,
+				52735EE22284562C00BA6E03 /* AboutPresenter.swift */,
+				52735EE02284562C00BA6E03 /* AboutView.swift */,
+				52735EEB2284564300BA6E03 /* AboutViewController.swift */,
+			);
+			path = AboutCode;
+			sourceTree = "<group>";
+		};
 		52959431227BA81300B48E59 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +159,7 @@
 		5295943C227BA81300B48E59 /* BackBaseExam */ = {
 			isa = PBXGroup;
 			children = (
+				52735EDE2284561300BA6E03 /* AboutCode */,
 				529A260122829CB700754557 /* View */,
 				529A26042282A01D00754557 /* ViewModel */,
 				52959474227C9D2100B48E59 /* ViewController */,
@@ -154,6 +189,7 @@
 		5295945C227BA81500B48E59 /* BackBaseExamUITests */ = {
 			isa = PBXGroup;
 			children = (
+				52735EF42284687F00BA6E03 /* AboutViewTest.swift */,
 				5295945D227BA81500B48E59 /* BackBaseExamUITests.swift */,
 				5295945F227BA81500B48E59 /* Info.plist */,
 			);
@@ -177,7 +213,7 @@
 				52959475227C9D5000B48E59 /* CitiesViewController.swift */,
 				52E870AA22812AFA00BCBF40 /* LandscapeViewController.swift */,
 				52735ED72283D09200BA6E03 /* MapViewController.swift */,
-				52735EDB2283EF8200BA6E03 /* AboutViewController.swift */,
+				52735EDB2283EF8200BA6E03 /* AboutCityViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -306,6 +342,7 @@
 				5295946C227BA87B00B48E59 /* cities.json in Resources */,
 				52959448227BA81500B48E59 /* LaunchScreen.storyboard in Resources */,
 				52959445227BA81500B48E59 /* Assets.xcassets in Resources */,
+				52735EF02284581900BA6E03 /* aboutInfo.json in Resources */,
 				52959443227BA81300B48E59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,14 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52735EDC2283EF8200BA6E03 /* AboutViewController.swift in Sources */,
+				52735EDC2283EF8200BA6E03 /* AboutCityViewController.swift in Sources */,
+				52735EE32284562C00BA6E03 /* AboutModel.swift in Sources */,
+				52735EE92284562C00BA6E03 /* AboutPresenter.swift in Sources */,
 				52735ED82283D09200BA6E03 /* MapViewController.swift in Sources */,
 				52959440227BA81300B48E59 /* ViewController.swift in Sources */,
 				52959476227C9D5000B48E59 /* CitiesViewController.swift in Sources */,
 				52E870AB22812AFA00BCBF40 /* LandscapeViewController.swift in Sources */,
 				5295943E227BA81300B48E59 /* AppDelegate.swift in Sources */,
 				529A260322829CC500754557 /* CityCell.swift in Sources */,
+				52735EEC2284564300BA6E03 /* AboutViewController.swift in Sources */,
+				52735EE52284562C00BA6E03 /* AboutView.swift in Sources */,
 				52E870AD22814D5200BCBF40 /* ViewControllerFactory.swift in Sources */,
+				52735EE72284562C00BA6E03 /* AboutInfo.swift in Sources */,
 				52959471227BA9A000B48E59 /* CitiesModel.swift in Sources */,
 				5295946F227BA8AF00B48E59 /* City.swift in Sources */,
 				529A26062282A05500754557 /* CitiesViewModel.swift in Sources */,
@@ -352,8 +394,14 @@
 			files = (
 				52959473227C448400B48E59 /* CItiesModelTests.swift in Sources */,
 				529A26082283BAB200754557 /* CitiesViewModelTest.swift in Sources */,
+				52735EEA2284562C00BA6E03 /* AboutPresenter.swift in Sources */,
+				52735EED2284564300BA6E03 /* AboutViewController.swift in Sources */,
 				52E870AF22814E7400BCBF40 /* ViewControllerFactoryTest.swift in Sources */,
+				52735EE42284562C00BA6E03 /* AboutModel.swift in Sources */,
+				52735F1422846A9700BA6E03 /* City.swift in Sources */,
+				52735EE62284562C00BA6E03 /* AboutView.swift in Sources */,
 				52959453227BA81500B48E59 /* BackBaseExamTests.swift in Sources */,
+				52735EE82284562C00BA6E03 /* AboutInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52735EF6228468A400BA6E03 /* AboutViewTest.swift in Sources */,
 				5295945E227BA81500B48E59 /* BackBaseExamUITests.swift in Sources */,
+				52735F1322846A9600BA6E03 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +614,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackBaseExam.app/BackBaseExam";
 			};
@@ -584,7 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackBaseExam.app/BackBaseExam";
 			};
@@ -603,7 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExamUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BackBaseExam;
 			};
@@ -622,7 +672,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExamUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BackBaseExam;
 			};
