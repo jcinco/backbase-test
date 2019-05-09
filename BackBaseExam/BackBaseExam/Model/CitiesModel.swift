@@ -8,33 +8,89 @@
 
 import Foundation
 
+/**
+ Represents the list of cities retreived from the JSON file provided.
+ This handles loading and caching of the city information, as well as
+ filtering / querying of specific city information.
+ */
 public class CitiesModel:NSObject {
     
+    private var _filterString:String? = ""
+    public var filterString:String? {
+        get {
+            return _filterString
+        }
+    }
     
-    private func loadJson() {
+    // Make cities array read only. Tampering not allowed.
+    private var cities:[City]? = nil
+    public var cityList:[City]? {
+        get {
+            return self.cities
+        }
+    }
+    
+    public func cities(withName name:String?)->[City]? {
+        // set lower case for case insensitivity
+        self._filterString = name?.lowercased()
+        if (nil != name || name?.count ?? 0 > 0) {
+            return self.cities?.filter { (item) -> Bool in
+                return (item.name?.lowercased().hasPrefix(self._filterString!))!
+            }
+        }
+        else {
+            return self.cities
+        }
+    }
+    
+    
+    /**
+     Loads the json data from the "cities.json" file.
+     
+     - Parameters:
+        - completion: Block - called when loading is done. 
+     */
+    public func loadJson(completion:@escaping (Bool)->Void) {
         do {
             let jsonFilePath = Bundle.main.path(forResource: "cities", ofType: "json")
             let data = try Data(contentsOf: URL(fileURLWithPath: jsonFilePath!))
-            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [[String:Any?]]
             
             // parse json
-            self.parseJson(json: json)
+            self.parseJson(json: data) { (success)->Void in
+                completion(success)
+            }
         }
         catch let e as NSError {
             print(e.localizedDescription)
         }
     }
     
-    private func parseJson(json:Array<[String:Any?]>?) {
+    
+    /**
+     Parses through the json data obtained from the "cities.json" file.
+     */
+    private func parseJson(json:Data?, completion: @escaping (Bool)->Void) {
         guard let inJson = json else {
             print("Nil json array")
             return
         }
-        
-        for item in inJson {
-            
+        DispatchQueue.global().async {
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let result = try decoder.decode([City].self, from: inJson)
+                self.cities = result.sorted(by: { (c1, c2) -> Bool in
+                    return c1.name! < c2.name!
+                })
+                
+                completion(true)
+            }
+            catch let e as NSError {
+                print(e.localizedDescription)
+                completion(false)
+            }
         }
-        
+      
     }
     
     
@@ -42,7 +98,6 @@ public class CitiesModel:NSObject {
     private static var INSTANCE:CitiesModel!
     private override init() {
         super.init()
-        self.loadJson()
     }
     public static var sharedInstance:CitiesModel! {
         get {
@@ -51,5 +106,10 @@ public class CitiesModel:NSObject {
             }
             return INSTANCE
         }
+    }
+    
+    
+    public static func destroy() {
+        INSTANCE = nil
     }
 }

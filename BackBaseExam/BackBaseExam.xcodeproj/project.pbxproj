@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52735ED82283D09200BA6E03 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735ED72283D09200BA6E03 /* MapViewController.swift */; };
+		52735EDA2283D65400BA6E03 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735ED92283D65400BA6E03 /* MapViewModel.swift */; };
+		52735EDC2283EF8200BA6E03 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52735EDB2283EF8200BA6E03 /* AboutViewController.swift */; };
 		5295943E227BA81300B48E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295943D227BA81300B48E59 /* AppDelegate.swift */; };
 		52959440227BA81300B48E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295943F227BA81300B48E59 /* ViewController.swift */; };
 		52959443227BA81300B48E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52959441227BA81300B48E59 /* Main.storyboard */; };
@@ -14,6 +17,17 @@
 		52959448227BA81500B48E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52959446227BA81500B48E59 /* LaunchScreen.storyboard */; };
 		52959453227BA81500B48E59 /* BackBaseExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52959452227BA81500B48E59 /* BackBaseExamTests.swift */; };
 		5295945E227BA81500B48E59 /* BackBaseExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295945D227BA81500B48E59 /* BackBaseExamUITests.swift */; };
+		5295946C227BA87B00B48E59 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 5295946B227BA87B00B48E59 /* cities.json */; };
+		5295946F227BA8AF00B48E59 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295946E227BA8AF00B48E59 /* City.swift */; };
+		52959471227BA9A000B48E59 /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52959470227BA9A000B48E59 /* CitiesModel.swift */; };
+		52959473227C448400B48E59 /* CItiesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52959472227C448400B48E59 /* CItiesModelTests.swift */; };
+		52959476227C9D5000B48E59 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52959475227C9D5000B48E59 /* CitiesViewController.swift */; };
+		529A260322829CC500754557 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A260222829CC500754557 /* CityCell.swift */; };
+		529A26062282A05500754557 /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A26052282A05500754557 /* CitiesViewModel.swift */; };
+		529A26082283BAB200754557 /* CitiesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A26072283BAB200754557 /* CitiesViewModelTest.swift */; };
+		52E870AB22812AFA00BCBF40 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E870AA22812AFA00BCBF40 /* LandscapeViewController.swift */; };
+		52E870AD22814D5200BCBF40 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E870AC22814D5200BCBF40 /* ViewControllerFactory.swift */; };
+		52E870AF22814E7400BCBF40 /* ViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E870AE22814E7400BCBF40 /* ViewControllerFactoryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52735ED72283D09200BA6E03 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		52735ED92283D65400BA6E03 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		52735EDB2283EF8200BA6E03 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5295943A227BA81300B48E59 /* BackBaseExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackBaseExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295943D227BA81300B48E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5295943F227BA81300B48E59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,17 @@
 		52959459227BA81500B48E59 /* BackBaseExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackBaseExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295945D227BA81500B48E59 /* BackBaseExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBaseExamUITests.swift; sourceTree = "<group>"; };
 		5295945F227BA81500B48E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5295946B227BA87B00B48E59 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cities.json; path = BackBaseExam/Model/cities.json; sourceTree = SOURCE_ROOT; };
+		5295946E227BA8AF00B48E59 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		52959470227BA9A000B48E59 /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
+		52959472227C448400B48E59 /* CItiesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CItiesModelTests.swift; sourceTree = "<group>"; };
+		52959475227C9D5000B48E59 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		529A260222829CC500754557 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		529A26052282A05500754557 /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
+		529A26072283BAB200754557 /* CitiesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModelTest.swift; sourceTree = "<group>"; };
+		52E870AA22812AFA00BCBF40 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		52E870AC22814D5200BCBF40 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		52E870AE22814E7400BCBF40 /* ViewControllerFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +125,10 @@
 		5295943C227BA81300B48E59 /* BackBaseExam */ = {
 			isa = PBXGroup;
 			children = (
+				529A260122829CB700754557 /* View */,
+				529A26042282A01D00754557 /* ViewModel */,
+				52959474227C9D2100B48E59 /* ViewController */,
+				5295946D227BA89400B48E59 /* Model */,
 				5295943D227BA81300B48E59 /* AppDelegate.swift */,
 				5295943F227BA81300B48E59 /* ViewController.swift */,
 				52959441227BA81300B48E59 /* Main.storyboard */,
@@ -110,6 +142,9 @@
 		52959451227BA81500B48E59 /* BackBaseExamTests */ = {
 			isa = PBXGroup;
 			children = (
+				529A26072283BAB200754557 /* CitiesViewModelTest.swift */,
+				52E870AE22814E7400BCBF40 /* ViewControllerFactoryTest.swift */,
+				52959472227C448400B48E59 /* CItiesModelTests.swift */,
 				52959452227BA81500B48E59 /* BackBaseExamTests.swift */,
 				52959454227BA81500B48E59 /* Info.plist */,
 			);
@@ -123,6 +158,45 @@
 				5295945F227BA81500B48E59 /* Info.plist */,
 			);
 			path = BackBaseExamUITests;
+			sourceTree = "<group>";
+		};
+		5295946D227BA89400B48E59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5295946B227BA87B00B48E59 /* cities.json */,
+				5295946E227BA8AF00B48E59 /* City.swift */,
+				52959470227BA9A000B48E59 /* CitiesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52959474227C9D2100B48E59 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52E870AC22814D5200BCBF40 /* ViewControllerFactory.swift */,
+				52959475227C9D5000B48E59 /* CitiesViewController.swift */,
+				52E870AA22812AFA00BCBF40 /* LandscapeViewController.swift */,
+				52735ED72283D09200BA6E03 /* MapViewController.swift */,
+				52735EDB2283EF8200BA6E03 /* AboutViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		529A260122829CB700754557 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				529A260222829CC500754557 /* CityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		529A26042282A01D00754557 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52735ED92283D65400BA6E03 /* MapViewModel.swift */,
+				529A26052282A05500754557 /* CitiesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5295946C227BA87B00B48E59 /* cities.json in Resources */,
 				52959448227BA81500B48E59 /* LaunchScreen.storyboard in Resources */,
 				52959445227BA81500B48E59 /* Assets.xcassets in Resources */,
 				52959443227BA81300B48E59 /* Main.storyboard in Resources */,
@@ -256,8 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52735EDC2283EF8200BA6E03 /* AboutViewController.swift in Sources */,
+				52735ED82283D09200BA6E03 /* MapViewController.swift in Sources */,
 				52959440227BA81300B48E59 /* ViewController.swift in Sources */,
+				52959476227C9D5000B48E59 /* CitiesViewController.swift in Sources */,
+				52E870AB22812AFA00BCBF40 /* LandscapeViewController.swift in Sources */,
 				5295943E227BA81300B48E59 /* AppDelegate.swift in Sources */,
+				529A260322829CC500754557 /* CityCell.swift in Sources */,
+				52E870AD22814D5200BCBF40 /* ViewControllerFactory.swift in Sources */,
+				52959471227BA9A000B48E59 /* CitiesModel.swift in Sources */,
+				5295946F227BA8AF00B48E59 /* City.swift in Sources */,
+				529A26062282A05500754557 /* CitiesViewModel.swift in Sources */,
+				52735EDA2283D65400BA6E03 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52959473227C448400B48E59 /* CItiesModelTests.swift in Sources */,
+				529A26082283BAB200754557 /* CitiesViewModelTest.swift in Sources */,
+				52E870AF22814E7400BCBF40 /* ViewControllerFactoryTest.swift in Sources */,
 				52959453227BA81500B48E59 /* BackBaseExamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,7 +528,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcinco.BackBaseExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

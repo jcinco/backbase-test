@@ -8,14 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        _ = CitiesModel.sharedInstance
+        let currentOrientation = UIDevice.current.orientation
+        self.setRootVC(forOrientation: currentOrientation)
+        
+        self.title = "City Search"
     }
 
+    public func setRootVC(forOrientation currentOrientation:UIDeviceOrientation) {
+        if (currentOrientation == .portrait) {
+            let portraitVC = ViewControllerFactory.sharedInstance?.viewController(withStoryboardName: "citySelection")
+            self.setViewControllers([portraitVC!], animated: false)
+        }
+        else if (currentOrientation == .landscapeLeft || currentOrientation == .landscapeRight) {
+            let landscapeVC = ViewControllerFactory.sharedInstance?.viewController(withStoryboardName: "landscape")
+            self.setViewControllers([landscapeVC!], animated: false)
+            
+        }
+    }
 
 }
 
