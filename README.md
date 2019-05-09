@@ -15,7 +15,7 @@ The approach I used to load and persist the JSON data during the lifetime of the
 ### 1. Loading of JSON data
 - The JSON data is loaded at first run asynchronously to avoid lagging the main thread since the data is huge. 
 - The loading view controller ( city selection view ) is notified by the model after the JSON data is read. A success or fail boolean parameter is passed to the callback so that the view controller can behave accordingly, depending on the outcome.
-- During loading, the JSON data is mapped struct objects to represent them in Swift code. These are stored in the model as an array of City structs. 
+- During loading, the JSON data is mapped to struct objects to represent them in Swift code. These are stored in the model as an array of City structs. 
 
 ### 2. Searching 
 - Searching is done asynchronously to avoid UI performance lag when typing on the search bar.
